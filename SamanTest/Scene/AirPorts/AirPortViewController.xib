@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AirPortViewController" customModule="SamanTest" customModuleProvider="target">
+            <connections>
+                <outlet property="segmentedControl" destination="HV3-tl-xbs" id="P8B-2p-Ao5"/>
+                <outlet property="tableView" destination="n9i-dy-7Dc" id="qFO-rY-o4D"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="n9i-dy-7Dc">
+                    <rect key="frame" x="0.0" y="119" width="414" height="743"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w51-ua-P9h">
+                    <rect key="frame" x="0.0" y="44" width="414" height="75"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvE-lw-8QO">
+                            <rect key="frame" x="10" y="9" width="45" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HV3-tl-xbs">
+                            <rect key="frame" x="8" y="36" width="398" height="32"/>
+                            <segments>
+                                <segment title="Relevance"/>
+                                <segment title="Distance"/>
+                                <segment title="Flights Score"/>
+                                <segment title="Travelers Score"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="HV3-tl-xbs" firstAttribute="leading" secondItem="w51-ua-P9h" secondAttribute="leading" constant="8" id="F89-Iy-9Ir"/>
+                        <constraint firstItem="uvE-lw-8QO" firstAttribute="top" secondItem="w51-ua-P9h" secondAttribute="top" constant="9" id="PfJ-JP-W3w"/>
+                        <constraint firstAttribute="trailing" secondItem="HV3-tl-xbs" secondAttribute="trailing" constant="8" id="bCA-o6-cRk"/>
+                        <constraint firstItem="uvE-lw-8QO" firstAttribute="leading" secondItem="w51-ua-P9h" secondAttribute="leading" constant="10" id="lgx-cp-4jD"/>
+                        <constraint firstAttribute="bottom" secondItem="HV3-tl-xbs" secondAttribute="bottom" constant="8" id="o98-Ac-U58"/>
+                        <constraint firstAttribute="height" constant="75" id="t5h-54-ciL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="w51-ua-P9h" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2c3-Gt-Gbe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="w51-ua-P9h" secondAttribute="trailing" id="4Bj-9b-Lki"/>
+                <constraint firstItem="w51-ua-P9h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="F7A-Ck-cWa"/>
+                <constraint firstItem="n9i-dy-7Dc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="I77-qG-wSV"/>
+                <constraint firstItem="n9i-dy-7Dc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JYb-9C-HAR"/>
+                <constraint firstItem="n9i-dy-7Dc" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Qfh-WV-fXZ"/>
+                <constraint firstItem="n9i-dy-7Dc" firstAttribute="top" secondItem="w51-ua-P9h" secondAttribute="bottom" id="koo-SU-1le"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

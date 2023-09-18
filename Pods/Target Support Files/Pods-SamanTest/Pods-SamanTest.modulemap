@@ -1,0 +1,6 @@
+framework module Pods_SamanTest {
+  umbrella header "Pods-SamanTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
